@@ -523,6 +523,8 @@ Deque <T> ad = new ArrayDeque<>();
 
 where T is the type of the object 
 ```
+```
 
+```
 
  
