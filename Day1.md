@@ -619,3 +619,41 @@ public class ExampleHashSet {
 }
 ```
 
+2] LinkedHashSet :
+- LinkedHashSet class provides Hashtable and Linked list implementation of Set interface.
+- It extendes the HashSet class and implements the Set interface.
+- LinkedHashSet class contains unique elements like HashSet.
+- LinkedHashSet allows null value.
+- It is non-synchronized.
+- LinkedHashSet class maintains insertion order.
+
+**Note :**
+- Keeping the insertion order in the LinkedHashSet has some additional costs, both in terms of extra memory and extra CPU cycles. Therefore, if it is not required to maintain insertion order, go for the lighter-weight HashMap or the HashSet.
+
+```
+package programs;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class ExampleLinkedHashSet {
+    public static void main(String[] args) {
+        LinkedHashSet<String> lhs = new LinkedHashSet<String>();
+
+        lhs.add("India");
+        lhs.add("is");
+        lhs.add("my");
+        lhs.add("country");
+        lhs.add("I");
+        lhs.add("love");
+        lhs.add("my");
+        lhs.add("country");
+
+        Iterator<String> itr = lhs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+
+```
