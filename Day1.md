@@ -657,3 +657,76 @@ public class ExampleLinkedHashSet {
 }
 
 ```
+
+**7. Sorted Set Interface :**
+- This interface is very similar to Set interface. The only difference is that this interface has extra methods that maintain the ordering of the elements.
+- The Sorted set interface extends the set interface and is used to handle the data which need to be sorted.
+- The class which implements this interface is TreeSet.
+
+```
+SortedSet<T> ts = new TreeSet<>();
+
+where T is the type of the object.
+```
+
+1] TreeSet :
+- TreeSet extendes AbstractSet class and implements the NavigableSet interface. (The NavigableSet interface implements SortedSet)
+- TreeSet class contains unique elements like HashSet.
+- For TreeSet class access and retrivel times are quite fast.
+- TreeSet does not allow the null element.
+- TreeSet is non synchronized.
+- TreeSet class maintain ascending order.
+- It's internally implemented binary search tree.
+- For synchronization of TreeSet use <u>Collections.synchronizedSet()</u>
+
+```
+package programs;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class ExampleTreeSetString {
+    public static void main(String[] args) {
+        TreeSet<String> ts = new TreeSet<>();
+        ts.add("Rakesh");
+        ts.add("Vijay");
+        ts.add("Rakesh");
+        ts.add("Anjani");
+
+        System.out.println();
+        Iterator<String> itr = ts.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+        System.out.println();
+        for (String value : ts) {
+            System.out.println(value);
+        }
+
+    }
+}
+
+```
+```
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class ExampleTreeSetInteger {
+    public static void main(String[] args) {
+        TreeSet<Integer> ts = new TreeSet<>();
+        ts.add(34);
+        ts.add(77);
+        ts.add(12);
+        ts.add(18);
+
+        Iterator<Integer> itr = ts.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+        System.out.println("Lowest Value :" + ts.pollFirst());
+        System.out.println("Highest Value :" + ts.pollLast());
+    }
+}
+
+```
