@@ -523,6 +523,137 @@ Deque <T> ad = new ArrayDeque<>();
 
 where T is the type of the object 
 ```
+```
+package programs;
 
+import java.util.ArrayDeque;
 
- 
+public class ExampleArrayDeque {
+    public static void main(String[] args) {
+        ArrayDeque<Integer> aDeque = new ArrayDeque<Integer>();
+
+        aDeque.add(10);
+        aDeque.add(20);
+        aDeque.add(30);
+        aDeque.add(40);
+        aDeque.add(50);
+
+        System.out.println(aDeque);
+
+        aDeque.clear();
+
+        aDeque.addFirst(664);
+        aDeque.addFirst(978);
+
+        aDeque.addLast(32);
+        aDeque.addLast(13);
+
+        System.out.println(aDeque);
+    }
+}
+
+```
+
+**6. Set Interface :**
+- This is a child interface of the collection interface.
+- This interface insertion order of data is not mainteined.
+- This does not allows duplicate data to be present in it.
+- This List interface is implemented by various classes like HashSet, TreeSet, LinkedHashSet etc.
+  
+```
+Set<T> hs = new HashSet<>();
+Set<T> ts = new TreeSet<>();
+Set<T> lhs = new LinkedHashSet<>();
+
+where T is the type of the object
+```
+
+#### Difference Between List and Set**
+
+| **List**                                                                         | **Set**                                                                                                |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 1) The List implementation allow us to add the same or duplicate elements.       | The Set implementation does not allow us add same or duplicate element. It's contains unique elements. |
+| 2) The insertion order is maintained by the List                                 | It does not maintain the insertion order of elements.                                                  |
+| 3) List allow us to add any number of null values.                               | Set allow us to add at least one null value in it.                                                     |
+| 4) The List implementation classes are LinkedList and ArrayList                  | The Set implementation classes are TreeSet, HashSet and LinkedHashSet.                                 |
+| 5) We can get the element of a specified index from the list using get() method. | We can not find the element from the Set based on index because it does not provide any get method().  |
+| 6) It is used when we want to frequently access the elements by using index.     | It is used when we want to design a collection of distinct elements.                                   |
+
+<br>
+
+1] HashSet :
+- The HashSet class is provides hash table data structure.
+- It extendes AbstarctSet class and implementes Set interface.
+- For store the elements it using <ul>hashing</ul> mechanism.
+- HashSet does not maintain the insertion order. Here the elements are inserted on the basis of their hashcode.
+- HashSet contains unique elements only.
+- HashSet allows null value.
+- HashSet is non synchronized.
+- HashSet is the best approach for search operations.
+- The initial default capacity of HashSet is 16, and load factor is 0.75
+
+```
+package programs;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class ExampleHashSet {
+    public static void main(String[] args) {
+        HashSet<String> hs = new HashSet<String>();
+
+        hs.add("India");
+        hs.add("is");
+        hs.add("my");
+        hs.add("country");
+        hs.add("I");
+        hs.add("love");
+        hs.add("my");
+        hs.add("country");
+
+        Iterator<String> itr = hs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+```
+
+2] LinkedHashSet :
+- LinkedHashSet class provides Hashtable and Linked list implementation of Set interface.
+- It extendes the HashSet class and implements the Set interface.
+- LinkedHashSet class contains unique elements like HashSet.
+- LinkedHashSet allows null value.
+- It is non-synchronized.
+- LinkedHashSet class maintains insertion order.
+
+**Note :**
+- Keeping the insertion order in the LinkedHashSet has some additional costs, both in terms of extra memory and extra CPU cycles. Therefore, if it is not required to maintain insertion order, go for the lighter-weight HashMap or the HashSet.
+
+```
+package programs;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class ExampleLinkedHashSet {
+    public static void main(String[] args) {
+        LinkedHashSet<String> lhs = new LinkedHashSet<String>();
+
+        lhs.add("India");
+        lhs.add("is");
+        lhs.add("my");
+        lhs.add("country");
+        lhs.add("I");
+        lhs.add("love");
+        lhs.add("my");
+        lhs.add("country");
+
+        Iterator<String> itr = lhs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+
+```
