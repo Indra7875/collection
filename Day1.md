@@ -730,3 +730,89 @@ public class ExampleTreeSetInteger {
 }
 
 ```
+
+**8. Map Interface :**
+- Map interface does not extend the Collection interface like List,Queue,Set interface.
+- Map contains key-value pair. Each key and value pair is known as an entry.
+- A Map contains unique keys. It does not allow duplicate keys, but you can have duplicate values.
+- LinkedHashMap and HashMap allow null keys and values, but TreeMap does not allow any null key or value.
+- A Map is useful if you have to search, update or delete elements on the basis of a keys.
+- In Map 
+        - TreeMap class implements SortedMap interface extends Map interface 
+        - LinkedHashMap class extends HashMap class implements Map interface
+
+```
+Map <T> hm = new HashMap<>();
+Map <T> lhm = new LinkedHashMap<>();
+Map <T> tm = new TreeMap<>();
+
+where T is the type of the object.
+```
+**Why Map does not extends Collection interface ?**
+- Because they are of an incompatible type.
+- List,Set and Queue are a collection of similar kind of objects but in case of Map it is the collection of key and value pairs.
+- For adding the element in List,Set,Queue we use add() method where as for Map
+  put() method is there to add key-value pair.
+- We can not iterate map directly because Map interface is not part of Collection.
+
+```
+package programs.Map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Map_Iteration {
+    public static void main(String[] args) {
+        Map<String, Float> map = new HashMap<String, Float>();
+        map.put("Apple", 29.39f);
+        map.put("Mango", 98.78f);
+        map.put("Banana", 80.67f);
+        map.put("Grapes", 50.16f);
+        map.put("Pineapple", 65.01f);
+        map.put("Kiwi", 13.10f);
+
+        System.out.println(map);
+        for (Map.Entry<String, Float> entry : map.entrySet()) {
+            System.out.println("Fruit Name : " + entry.getKey() + " \n Price : " + entry.getValue());
+        }
+    }
+}
+
+```
+
+1] HashMap :-
+- HashMap extends AbstarctMap, AbstractMap implements Map
+- It stores the data in key-value pairs. To access a value in a HashMap, we must know it's key.
+- HashMap uses a technique called Hashing. Hashing is a technique of convering a large String to a small String that represents a  same String so that the indexing and search operations are faster.
+- HashSet also uses HashMap internally.
+- HashMap contains only unique keys. If you insert the duplicate key, it will replace the element of the corresponding key.
+- HashMap may have only one null key and multiple null values.
+- It is non synchronized.
+- It does not maintains order.
+- The initial default capacity of HashMap classis 16 with load factor of 0.75.
+
+```
+package programs.Map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        HashMap<Integer, String> hm = new HashMap<Integer, String>();
+        hm.put(1, "Spider Man");
+        hm.put(2, "Iorn Man");
+        hm.put(4, "Hulk");
+        hm.put(5, "Thor");
+        hm.put(3, "Black widow");
+        hm.put(5, "Thor-Love and Thunder");
+
+        System.out.println(hm);
+
+        for (Map.Entry<Integer, String> entry : hm.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " \n Movie Name : " + entry.getValue());
+        }
+    }
+}
+
+```
