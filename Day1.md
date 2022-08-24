@@ -816,3 +816,59 @@ public class HashMapExample {
 }
 
 ```
+**Difference between HashMap and HashTable**
+| HashMap                                                                                                              | HashTable                                                         |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 1) HashMap is non synchronized. It is not thread safe.                                                               | HashTable is synchronized. It is a thread-safe.                   |
+| 2) HashMap allows only one null key and multiple null values.                                                        | HashTable does not allow any null key or value.                   |
+| 3) HashMap is a new class introduced in JDK 1.2                                                                      | HashTable is a legacy class.                                      |
+| 4) HashMap is fast.                                                                                                  | HashTable is slow.                                                |
+| 5) We can make the HashMap as synchronized by calling below code </br> Map m = Collections.synchronizedMap(hashMap); | HashTable is internally synchronized and can't be unsynchronized. |
+| 6) HashMap is traversed by Iterator.                                                                                 | HashTable is traversed by Enumerator and Iterator.                |
+| 7) Iterator in HashMap is fail-fast.                                                                                 | Enumerator in HashTable is not fail-fast.                         |
+| 8) HashMap inherits AbstractMap class.                                                                               | HashTable inherits Dictionary class.                              |
+
+
+2] LinkedHashMap :-
+- LinkedHashMap is just like HashMap with an additional feature of maintaining an order of elements inserted into it, so that it can be accessed in their insertion order.
+- LinkedHashMap extends HashMap.
+
+```
+package programs.Map;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class ExampleLinkedHashMap {
+    public static void main(String[] args) {
+        LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer, String>();
+
+        lhm.put(1, "one");
+        lhm.put(3, "three");
+        lhm.put(2, "two");
+        lhm.put(6, "six");
+        lhm.put(4, "four");
+        lhm.put(5, "five");
+        lhm.put(7, "seven");
+        lhm.put(9, "nine");
+        lhm.put(8, "eight");
+        lhm.put(10, "ten");
+
+        System.out.println(lhm);
+
+        System.out.println("Getting value for key 6 : " + lhm.get(6));
+        System.out.println("Size of the map : " + lhm.size());
+        System.out.println("Is map empty ? " + lhm.isEmpty());
+        System.out.println("Contains key 9 ? " + lhm.containsKey(9));
+        System.out.println("Contains value 'ten' ? " + lhm.containsValue("ten"));
+        System.out.println("delete element 1 " + lhm.remove(1));
+
+        for (Map.Entry<Integer, String> entry : lhm.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " \n value : " + entry.getValue());
+        }
+
+    }
+}
+
+```
+3] 
