@@ -919,3 +919,36 @@ public class ExampleTreeMap {
 
 ```
 
+#### Array :
+- Individual variable define >> Arrays >> Collection
+ **Advantage of Array :-**
+ 1) The main advantage of an array is we can represent multiple values with single varibale. So that reusability of code will be improved.
+ 2) If we know exact size of element then we should go for arrays because the performance is best in arrys.
+
+ **Limitations of Array :-**
+ 1) Arrays are fixed in size. i.e. Once we created an array with some size there is no chance of increasing or decreasing it's size based on our requirement. Hence to use the arrays we should know the size in advance which may not possible always.
+ 2) Arrays can hold only homogenous data elements except Object.
+ 3) Arrays concept is not implemented based on some standard data structure hence readymade method support is not available for every requirement we have to write the code explicitly which is complexity of programming.
+
+
+**Advantages of collection over arrays :-**
+ 1) Collectionss are growable in nature i.e. Based on our requirement we can increase (or) decrease the size.
+ 2) Collections can hold both homogenous and heterogenous elements.
+ 3) Every collection class is implemented based on some standard data structure. Hence readymade method support is available for every requirement. 
+
+**Limitations of collection over arrays :-**
+ 1) Performance is decreased in collection. 
+
+**Differences between Arryas and Collection**
+| **Arryas**                                                                                                     | **Collection**                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1) The size of an array is fixed.                                                                              | The size of collection is dynamic.                                                                                            |
+| 2) In array we can stores only homogeneous type of data.                                                       | n collection we can stores homogeneous as well as heterogeneous data.                                                         |
+| 3) In terms of memory usage array is less efficient.                                                           | In terms of memory usage collection is more efficient.                                                                        |
+| 4) No underlying data structure.                                                                               | Collections having underlying data structure to simplify our work.                                                            |
+| 5) In arrays due to continues memory allocation at compile time array give better performance than collection. | In collection memory is allocated at run time and it's not continuous therefore collection gives less performance than array. |
+| 6) Array can holds both type of values primitive type and object type.                                         | Collection can holds only object type of values.                                                                              |
+| 7) If size is fixed then it's highly recommend to go for array.                                                | If size is not fixed then only we can go for Collection.                                                                      |
+
+
+
