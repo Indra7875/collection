@@ -816,3 +816,139 @@ public class HashMapExample {
 }
 
 ```
+**Difference between HashMap and HashTable**
+| HashMap                                                                                                              | HashTable                                                         |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 1) HashMap is non synchronized. It is not thread safe.                                                               | HashTable is synchronized. It is a thread-safe.                   |
+| 2) HashMap allows only one null key and multiple null values.                                                        | HashTable does not allow any null key or value.                   |
+| 3) HashMap is a new class introduced in JDK 1.2                                                                      | HashTable is a legacy class.                                      |
+| 4) HashMap is fast.                                                                                                  | HashTable is slow.                                                |
+| 5) We can make the HashMap as synchronized by calling below code </br> Map m = Collections.synchronizedMap(hashMap); | HashTable is internally synchronized and can't be unsynchronized. |
+| 6) HashMap is traversed by Iterator.                                                                                 | HashTable is traversed by Enumerator and Iterator.                |
+| 7) Iterator in HashMap is fail-fast.                                                                                 | Enumerator in HashTable is not fail-fast.                         |
+| 8) HashMap inherits AbstractMap class.                                                                               | HashTable inherits Dictionary class.                              |
+
+
+2] LinkedHashMap :-
+- LinkedHashMap is just like HashMap with an additional feature of maintaining an order of elements inserted into it, so that it can be accessed in their insertion order.
+- LinkedHashMap extends HashMap.
+
+```
+package programs.Map;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class ExampleLinkedHashMap {
+    public static void main(String[] args) {
+        LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer, String>();
+
+        lhm.put(1, "one");
+        lhm.put(3, "three");
+        lhm.put(2, "two");
+        lhm.put(6, "six");
+        lhm.put(4, "four");
+        lhm.put(5, "five");
+        lhm.put(7, "seven");
+        lhm.put(9, "nine");
+        lhm.put(8, "eight");
+        lhm.put(10, "ten");
+
+        System.out.println(lhm);
+
+        System.out.println("Getting value for key 6 : " + lhm.get(6));
+        System.out.println("Size of the map : " + lhm.size());
+        System.out.println("Is map empty ? " + lhm.isEmpty());
+        System.out.println("Contains key 9 ? " + lhm.containsKey(9));
+        System.out.println("Contains value 'ten' ? " + lhm.containsValue("ten"));
+        System.out.println("delete element 1 " + lhm.remove(1));
+
+        for (Map.Entry<Integer, String> entry : lhm.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " \n value : " + entry.getValue());
+        }
+
+    }
+}
+
+```
+3] TreeMap :-
+- TreeMap class provides an efficient way of storing key-value pairs in sorted order.
+- TreeMap conatins key-value pair. 
+- TreeMap implements NavigableMap extends SortedMap extends Map.
+- TreeMap contains only unique elements.
+- TreeMap can not have a null key but can have multiple null values.
+- It is non synchronized.
+- It maintains ascending order.
+
+**What is difference between HashMap and TreeMap**
+| **HashMap**                               | **TreeMap**                           |
+| ----------------------------------------- | ------------------------------------- |
+| 1) HashMap can contain only one null key. | TreeMap can not contain any null key. |
+| 2) HashMap maintains no order.            | TreeMap maintains ascending order.    |
+| 3) As compare to TreeMap it's fast.       | As compare HashMap it's slow.         |
+
+```
+package programs.Map;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class ExampleTreeMap {
+    public static void main(String[] args) {
+        TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
+
+        tm.put(1, "one");
+        tm.put(3, "three");
+        tm.put(2, "two");
+        tm.put(6, "six");
+        tm.put(4, "four");
+        tm.put(5, "five");
+        tm.put(7, "seven");
+        tm.put(9, "nine");
+        tm.put(8, "eight");
+        tm.put(10, "ten");
+
+        System.out.println(tm);
+
+        for (Map.Entry<Integer, String> entry : tm.entrySet()) {
+            System.out.println("key : " + entry.getKey() + " \n value : " +
+                    entry.getValue());
+        }
+    }
+}
+
+```
+
+#### Array :
+- Individual variable define >> Arrays >> Collection
+ **Advantage of Array :-**
+ 1) The main advantage of an array is we can represent multiple values with single varibale. So that reusability of code will be improved.
+ 2) If we know exact size of element then we should go for arrays because the performance is best in arrys.
+
+ **Limitations of Array :-**
+ 1) Arrays are fixed in size. i.e. Once we created an array with some size there is no chance of increasing or decreasing it's size based on our requirement. Hence to use the arrays we should know the size in advance which may not possible always.
+ 2) Arrays can hold only homogenous data elements except Object.
+ 3) Arrays concept is not implemented based on some standard data structure hence readymade method support is not available for every requirement we have to write the code explicitly which is complexity of programming.
+
+
+**Advantages of collection over arrays :-**
+ 1) Collectionss are growable in nature i.e. Based on our requirement we can increase (or) decrease the size.
+ 2) Collections can hold both homogenous and heterogenous elements.
+ 3) Every collection class is implemented based on some standard data structure. Hence readymade method support is available for every requirement. 
+
+**Limitations of collection over arrays :-**
+ 1) Performance is decreased in collection. 
+
+**Differences between Arryas and Collection**
+| **Arryas**                                                                                                     | **Collection**                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1) The size of an array is fixed.                                                                              | The size of collection is dynamic.                                                                                            |
+| 2) In array we can stores only homogeneous type of data.                                                       | n collection we can stores homogeneous as well as heterogeneous data.                                                         |
+| 3) In terms of memory usage array is less efficient.                                                           | In terms of memory usage collection is more efficient.                                                                        |
+| 4) No underlying data structure.                                                                               | Collections having underlying data structure to simplify our work.                                                            |
+| 5) In arrays due to continues memory allocation at compile time array give better performance than collection. | In collection memory is allocated at run time and it's not continuous therefore collection gives less performance than array. |
+| 6) Array can holds both type of values primitive type and object type.                                         | Collection can holds only object type of values.                                                                              |
+| 7) If size is fixed then it's highly recommend to go for array.                                                | If size is not fixed then only we can go for Collection.                                                                      |
+
+
+
