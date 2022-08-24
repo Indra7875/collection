@@ -871,4 +871,51 @@ public class ExampleLinkedHashMap {
 }
 
 ```
-3] 
+3] TreeMap :-
+- TreeMap class provides an efficient way of storing key-value pairs in sorted order.
+- TreeMap conatins key-value pair. 
+- TreeMap implements NavigableMap extends SortedMap extends Map.
+- TreeMap contains only unique elements.
+- TreeMap can not have a null key but can have multiple null values.
+- It is non synchronized.
+- It maintains ascending order.
+
+**What is difference between HashMap and TreeMap**
+| **HashMap**                               | **TreeMap**                           |
+| ----------------------------------------- | ------------------------------------- |
+| 1) HashMap can contain only one null key. | TreeMap can not contain any null key. |
+| 2) HashMap maintains no order.            | TreeMap maintains ascending order.    |
+| 3) As compare to TreeMap it's fast.       | As compare HashMap it's slow.         |
+
+```
+package programs.Map;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class ExampleTreeMap {
+    public static void main(String[] args) {
+        TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
+
+        tm.put(1, "one");
+        tm.put(3, "three");
+        tm.put(2, "two");
+        tm.put(6, "six");
+        tm.put(4, "four");
+        tm.put(5, "five");
+        tm.put(7, "seven");
+        tm.put(9, "nine");
+        tm.put(8, "eight");
+        tm.put(10, "ten");
+
+        System.out.println(tm);
+
+        for (Map.Entry<Integer, String> entry : tm.entrySet()) {
+            System.out.println("key : " + entry.getKey() + " \n value : " +
+                    entry.getValue());
+        }
+    }
+}
+
+```
+
