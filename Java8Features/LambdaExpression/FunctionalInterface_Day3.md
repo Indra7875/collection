@@ -61,13 +61,14 @@ interface B extends A
 }
 ```
 
-#### Lambda Expression with Functional Interfaces :
+#### Example 1 : 
+**Lambda Expression without Functional Interfaces :**
 ```
-interface Interf
+interface Interf1
 {
     public void m1();
 }
-class Demo implements Interf
+class Demo implements Interf1
 {
     public void m1(){
         System.out.println("Hello...");
@@ -81,9 +82,9 @@ class Test
     }
 }
 ```
-
+**Lambda Expression with Functional Interfaces :**
 ```
-interface Interf
+interface Interf1
 {
     public void m1();
 }
@@ -95,13 +96,15 @@ class Test
     }
 }
 ```
+#### Example 2 : 
+**Lambda Expression without Functional Interfaces :**
 ```
-inteface Interf
+inteface Interf2
 {
     public void add (int a,int b);
 }
 
-class Demo implements Interf
+class Demo implements Interf2
 {
     public void add (int a, int b){
         System.out.println("The Sum :"+(a+b));
@@ -116,8 +119,9 @@ class Test
     }
 }
 ```
+**Lambda Expression with Functional Interfaces :**
 ```
-interface Interf
+interface Interf2
 {
     public void add(a,b);
 }

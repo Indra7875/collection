@@ -9,6 +9,7 @@
      - Nameless / No Name
      - without return type / No return type
      - without modifiers / No modifiers
+- It is very useful in collection library. It helps to iterate, filter and extract data from collection.
 
 **Example1 :**
 ``
