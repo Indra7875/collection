@@ -1,23 +1,24 @@
-package programs;
+package programs.collection_programs;
 
 import java.util.Iterator;
 import java.util.Stack;
 
-public class ExampleStackString {
+public class ExampleStackInteger {
     public static void main(String[] args) {
-        Stack<String> stack = new Stack<String>();
-        stack.push("Indrajit");
-        stack.push("Rajesh");
-        stack.push("Rananavare");
-        stack.push("Maharashtra");
+        Stack<Integer> stack = new Stack<Integer>();
+        stack.push(10);
+        stack.push(20);
+        stack.push(15);
+        stack.push(7);
 
-        Iterator<String> itr = stack.iterator();
+        Iterator<Integer> itr = stack.iterator();
 
         while (itr.hasNext()) {
             System.out.print(itr.next() + " ");
         }
 
         System.out.println();
+        System.out.println(stack.peek());
         System.out.println(stack.pop());
         System.out.println(stack.peek());
 
@@ -27,7 +28,7 @@ public class ExampleStackString {
 
         System.out.println();
 
-        for (String str : stack) {
+        for (Integer str : stack) {
             System.out.print(str + " ");
         }
 

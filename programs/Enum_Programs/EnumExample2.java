@@ -7,7 +7,7 @@ enum Days {
 
 public class EnumExample2 {
     public static void main(String[] args) {
-        Days day = Days.MONDAY;
+        Days1 day = Days1.MONDAY;
         System.out.println(day);
     }
 }

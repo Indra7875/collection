@@ -1,4 +1,4 @@
-package programs;
+package programs.collection_programs;
 
 import java.util.ArrayDeque;
 

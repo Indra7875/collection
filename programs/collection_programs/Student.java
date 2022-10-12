@@ -1,4 +1,4 @@
-package programs;
+package programs.collection_programs;
 
 public class Student implements Comparable<Student> {
     int rollNo;

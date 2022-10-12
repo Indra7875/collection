@@ -1,11 +1,11 @@
 package programs.Enum_Programs;
 
-enum Days {
+enum Days1 {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
 
     // Defining main method inside enum
     public static void main(String[] args) {
-        Days day = Days.FRIDAY;
+        Days1 day = Days1.FRIDAY;
         System.out.println(day);
     }
 }
