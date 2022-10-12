@@ -64,35 +64,43 @@ interface B extends A
 #### Example 1 : 
 **Lambda Expression without Functional Interfaces :**
 ```
-interface Interf1
-{
-    public void m1();
+package programs.Java8Features_Programs.LambdaExpression_Programs;
+
+public interface Bank {
+    public void sendMoney();
 }
-class Demo implements Interf1
-{
-    public void m1(){
-        System.out.println("Hello...");
+
+package programs.Java8Features_Programs.LambdaExpression_Programs;
+
+public class HDFC implements Bank {
+
+    @Override
+    public void sendMoney() {
+        System.out.println("sending money amount 50000");
     }
 }
-class Test
-{
-    public static void main(String[]args){
-        Demo d = new Demo();
-        d.m1();
+package programs.Java8Features_Programs.LambdaExpression_Programs;
+
+public class TestWithLambda {
+    public static void main(String[] args) {
+        HDFC hdfc = new HDFC();
+        hdfc.sendMoney();
     }
 }
 ```
 **Lambda Expression with Functional Interfaces :**
 ```
-interface Interf1
-{
-    public void m1();
+package programs.Java8Features_Programs.LambdaExpression_Programs;
+
+public interface Bank {
+    public void sendMoney();
 }
-class Test
-{
-    public static void main(String [] args){
-        Interf i = () -> System.out.println("Hello...By Lambda Expression");
-        i.m1();
+package programs.Java8Features_Programs.LambdaExpression_Programs;
+
+public class TestWithoutLambda {
+    public static void main(String[] args) {
+        Bank bank = () -> System.out.println("send money amount 10000");
+        bank.sendMoney();
     }
 }
 ```
