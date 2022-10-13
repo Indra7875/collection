@@ -12,7 +12,7 @@
 1. Consistent API :
    - The API is the basic set of interfaces like Collection,Set,List or Map all the classes (ArrayList,LinkedList,Vector,etc) that implement these interfaces have some common set of methods.
   
-2. Reduce progarmming effort :
+2. Reduce programming effort :
    - A programmer doesn't have to worry about the design of Collection but rather than he can focus on it's best use in his program.
    - Therefore the basic concept of OOPs abstraction has been successfully implemented.
   
@@ -30,45 +30,45 @@
 
 #### Methods of the Collection Interface
 
-| Method                     | Description                                                                                                                                                      |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| add(Object)                | This method is used to add an object to the collection                                                                                                           |
-| addAll(Collection c)       | This method add all the elements in the given collection to this collection.                                                                                     |
-| clear()                    | This method removes all the elements from this collection.                                                                                                       |
-| contains(Object o)         | This method returns true if the collection contains the specified element.                                                                                       |
-| containsAll(Collection c)  | This method returns true it the collection contains all of the elements in the given collection.                                                                 |
-| hashCode()                 | This method is used to return the hash code value for this collection.                                                                                           |
-| isEmpty()                  | This method returns true if this collection contains no element                                                                                                  |
-| iterator()                 | This method returns an iterator over the elements in this collection.                                                                                            |
-| max()                      | This method is used to return the maximum value present in the collection.                                                                                       |
-| parallelStream()           | This method returns a parallel Stream with this collection as it's source.                                                                                       |
-| remove(Object o)           | This method is used to remove the given object from the collection. If there are duplicate values, then this method removes the first occurrenece of the object. |
-| removeAll(Collection c)    | This method is used to remove all the objects mentioned in the given collection from the collection.                                                             |
-| removeIf(Predicate filter) | This method is used to remove all elements of this collection that satisfy the given predicate.                                                                  |
-| retainAll(Collection c)    | This method is used to retain only the elements in this collection that are contained in the specified collection.                                               |
-| size()                     | This method is used to return the number of elements in the collection.                                                                                          |
-| spliterator()              | This method is used to create a Spliterator over the elements in this collection.                                                                                |
-| stream()                   | This method is used to return a sequential stream with this collection as its source.                                                                            |
-| to Array()                 | This method is used to return an array containing all the elements in this collection.                                                                           |
+| Method                     | Description                                                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| add(Object)                | This method is used to add an object to the collection                                                                                                          |
+| addAll(Collection c)       | This method add all the elements in the given collection to this collection.                                                                                    |
+| clear()                    | This method removes all the elements from this collection.                                                                                                      |
+| contains(Object o)         | This method returns true if the collection contains the specified element.                                                                                      |
+| containsAll(Collection c)  | This method returns true it the collection contains all of the elements in the given collection.                                                                |
+| hashCode()                 | This method is used to return the hash code value for this collection.                                                                                          |
+| isEmpty()                  | This method returns true if this collection contains no element                                                                                                 |
+| iterator()                 | This method returns an iterator over the elements in this collection.                                                                                           |
+| max()                      | This method is used to return the maximum value present in the collection.                                                                                      |
+| parallelStream()           | This method returns a parallel Stream with this collection as it's source.                                                                                      |
+| remove(Object o)           | This method is used to remove the given object from the collection. If there are duplicate values, then this method removes the first occurrence of the object. |
+| removeAll(Collection c)    | This method is used to remove all the objects mentioned in the given collection from the collection.                                                            |
+| removeIf(Predicate filter) | This method is used to remove all elements of this collection that satisfy the given predicate.                                                                 |
+| retainAll(Collection c)    | This method is used to retain only the elements in this collection that are contained in the specified collection.                                              |
+| size()                     | This method is used to return the number of elements in the collection.                                                                                         |
+| spliterator()              | This method is used to create a Spliterator over the elements in this collection.                                                                               |
+| stream()                   | This method is used to return a sequential stream with this collection as its source.                                                                           |
+| to Array()                 | This method is used to return an array containing all the elements in this collection.                                                                          |
 |                            |
 
 
 #### Interfaces in collection 
 **1. Iterable Interface:**
 - This is the root interface for the entire collection framework.
-- Collection interface extendes iterable interace. Therefore, inherently, all the interfaces and classes implement this interface.
+- Collection interface extendes iterable interface. Therefore, inherently, all the interfaces and classes implement this interface.
 - The main functionality of this interface is to provide an iterator for the collection.
-- Iterable interface contains only one abstarct method which is iterator.
+- Iterable interface contains only one abstract method which is iterator.
 - It returns the Iterator iterator();
 
 **2. Collection Interface :**
-- This interafce is extendes Iterable interface and it's implemented all the classes in the collection framework.
+- This interface is extendes Iterable interface and it's implemented all the classes in the collection framework.
 - Collection interface contains basic universal methods like add(), remove()
 - This interface acts like foundation on which collection classes implemented.
 
 **3. List Interface :**
 - This is a child interface of the collection interface.
-- This interface insertion order of data is mainteined.
+- This interface insertion order of data is maintained.
 - This also allows duplicate data to be present in it.
 - This List interface is implemented by various classes like ArrayList, LinkedList, Vector etc.
   
@@ -82,12 +82,12 @@ where T is the type of the object
 **The classes which implements the List Interfaces :**
 1] ArrayList :
 - ArrayList provides us with dynamic dynamic arrays in java.
-- It is slower than standered arrays but helpful programmers where lots of manipulation in the array is needed.
-- The size of ArrayList is increases automaticaaly if the collection grows or shrinks if objects are removed from the collection.
+- It is slower than standard arrays but helpful programmers where lots of manipulation in the array is needed.
+- The size of ArrayList is increases automatically if the collection grows or shrinks if objects are removed from the collection.
 - ArrayList allows us to randomly access the list because the array works on an index basis.
 - ArrayList can not be used for primitive types like int, char etc. We need wrapper class for such cases.
 - ArrayList class is non synchronized.
-- In ArrayList, manipulation is a little bit slower than the LinkedList in java becuase a lot of shifting needs to occur if any element is removed from the array list.
+- In ArrayList, manipulation is a little bit slower than the LinkedList in java because a lot of shifting needs to occur if any element is removed from the array list.
 
 ```
 import java.util.ArrayList;
@@ -124,7 +124,7 @@ public class ExampleArrayList {
 - LinkedList class can contain duplicate elements.
 - LinkedList class maintain insertion order.
 - LinkedList class is non synchronized.
-- In java LinkedList class, manipulation is fast becuase no shifting needs to occur.
+- In java LinkedList class, manipulation is fast because no shifting needs to occur.
 - Java LinkedList class can be used as list, stack or queue.
 
 ```
@@ -163,20 +163,20 @@ public class ExampleLinkedList {
 | ArrayList                                                                                                                                                    | LinkedList                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
 | ArrayList internally uses a dynamic array to store the elements.                                                                                             | LinkedList internally uses a doubly linked list to store the elements.                                                                |
-| Manipulation with ArrayList is slow becuase it internally uses an array. If any element is removed from array, all the other elements are shifted in memory. | Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory. |
-| An ArrayList class can act as a list only becuase it implements List only.                                                                                   | LinkedList class can act as list and queue both because it implements List and Deque interfaces.                                      |
+| Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from array, all the other elements are shifted in memory. | Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory. |
+| An ArrayList class can act as a list only because it implements List only.                                                                                   | LinkedList class can act as list and queue both because it implements List and Deque interfaces.                                      |
 | ArrayList is better for storing and accessing data.                                                                                                          | LinkedList is better for manipulating data.                                                                                           |
 | The memory location for the elements of an ArrayList is contiguous                                                                                           | The memory location for the elements of a linked list is not contiguous.                                                              |
-| Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.                                                          | There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialised.       |
+| Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.                                                          | There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.       |
 
 
 **Points to Remember :**
-- i) When  the rate of addition or rate of removal is more than the read then such a scenarios, we go for LinkedList. On the other hand, the frequency of the read scenarious is more than the addition or removal rate, then we go for ArrayList.
+- i) When  the rate of addition or rate of removal is more than the read then such a scenarios, we go for LinkedList. On the other hand, the frequency of the read scenario's is more than the addition or removal rate, then we go for ArrayList.
 - ii) Since the elements of an ArrayList are stored more compact as compared to a LinkedList, therefore the ArrayList is more cache-friendly as compared to LinkedList. Thus, chance for the cache miss are less in an ArrayList as compared to LinkedList. Generally, it is considered that a LinkedList is poor in cache-locality.
-- iii) Memory overhead in the LinkedList is more as compared to the ArrayList. It is becuase in a LinkedList we have two extra links (next and previous) as it required to store the address of the previous and the next nodes, and these links consume extra space. Such links are not present in an ArrayList.
+- iii) Memory overhead in the LinkedList is more as compared to the ArrayList. It is because in a LinkedList we have two extra links (next and previous) as it required to store the address of the previous and the next nodes, and these links consume extra space. Such links are not present in an ArrayList.
 
 3] Vector :
-- Vector is like dynamic array which can grow or shrink it's size. (slower than standerd Array)
+- Vector is like dynamic array which can grow or shrink it's size. (slower than standard Array)
 - Unlike Array there is no size limit we can store n numbers of elements in Vector.
 - It is in util package (since JDK 1.2) and implements the List interface.
 - The primary difference between a Vector and ArrayList is that a Vector is synchronized and an ArrayList is non-synchronized.
@@ -217,10 +217,10 @@ public class ExampleVector {
 **Difference Between ArrayList and Vector :**
 | ArrayList                                                                                       | Vector                                                                                                                                                                                                      |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ArryList is not synchronized (Not Thread safe)                                                  | Vector is synchronized (Thread safe)                                                                                                                                                                        |
+| ArrayList is not synchronized (Not Thread safe)                                                 | Vector is synchronized (Thread safe)                                                                                                                                                                        |
 | ArrayList increments 50% of current array size if number of elements exceed from it's capacity. | Vector increments 100% the array size if the total number of elements exceed than it's capacity.                                                                                                            |
 | ArrayList is not a legacy class. (Since JDK 1.2)                                                | Vector is a legacy class.                                                                                                                                                                                   |
-| ArrayList is fast because it is non-synchronised.                                               | Vector is slow because it is synchronised. i.e. In a multi threading environment, it holds the other threads in runnable or non-runnable state until current thread releases the lock of the of the object. |
+| ArrayList is fast because it is non-synchronized.                                               | Vector is slow because it is synchronized. i.e. In a multi threading environment, it holds the other threads in runnable or non-runnable state until current thread releases the lock of the of the object. |
 
 
 4] Stack :
@@ -230,7 +230,7 @@ public class ExampleVector {
 - In addition to the basic push and pop operations, the class provides three more functions of empty,search and peek.
 **Points to Remember :**
 - Stack class is a subclass of Vector and a legacy class.
-- It is thread-safe which might be overhead in an enviroment where thread safety is not needed.
+- It is thread-safe which might be overhead in an environment where thread safety is not needed.
 - An alternate to Stack is to use <u>ArrayDequeue</u> which is not thread-safe and faster array implementation.
 
 ```
@@ -274,7 +274,7 @@ public class ExampleStack {
 ```
 
 **4. Queue Interface :** 
-- As the name suggest, a queue interface maintains the FIFO (First In First Out) oorder similar to a real-world queue line.
+- As the name suggest, a queue interface maintains the FIFO (First In First Out) order similar to a real-world queue line.
 - This interface is dedicated to storing all the elements where the order of the elements matter. 
 - For example, whenever we try to book a ticket, the tickets are sold on first come first serve basis. Therefore, the person whose request arrives first into the queue gets the ticket.
 - There are various classes like <u>PriorityQueue,ArrayDeque</u>etc. which are implemented to Queue interface.
@@ -330,12 +330,12 @@ public class ExamplePQueueInteger {
 
 ```
 
-- The elementsof the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used.
+- The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used.
 
-##### Comparable Inteface
+##### Comparable Interface
 - A comparable interface is used to order the objects of the user defined class.
 - This interface is found in java.lang package
-- Comparable interface contains only one method named comapredTo(Object).
+- Comparable interface contains only one method named comparedTo(Object).
 - It provides a single sorting sequence only. i.e. You can sort the elements on the basis of single data member only.
 - It modifies the actual class.
 
@@ -351,7 +351,7 @@ public class ExamplePQueueInteger {
 - If collection elements are of Set or Map we can use TreeSet or TreeMap.
 - However , we can not sort the elements of List, but Collections class provides methods for sorting the elements of List type elements also.
 
-**Colletions.sort(List list, Comparator c)**
+**Collections.sort(List list, Comparator c)**
 - Internally the sort method call Comparator method to sort the elements which returns 0 (for equal), 1 (for grater than), -1 (for less than)
 
 **Comparable Example :**
@@ -504,7 +504,7 @@ public class ExampleComparator {
 
 **5. Deque Interface :**
 - Deque interface is present in java.util package.
-- It is the exteends the interface Queue.
+- It is the extends the interface Queue.
 - The Deque supports the addition as well as the removal of elements from both ends of the data structure.
 - Therefore a Deque can be used as a stack or queue.
 - We know that the stack supports the Last in First Out / First in Last Out (LIFO/FILO) and queue supports First in First Out (FIFO)
@@ -556,7 +556,7 @@ public class ExampleArrayDeque {
 
 **6. Set Interface :**
 - This is a child interface of the collection interface.
-- This interface insertion order of data is not mainteined.
+- This interface insertion order of data is not maintained.
 - This does not allows duplicate data to be present in it.
 - This List interface is implemented by various classes like HashSet, TreeSet, LinkedHashSet etc.
   
@@ -583,7 +583,7 @@ where T is the type of the object
 
 1] HashSet :
 - The HashSet class is provides hash table data structure.
-- It extendes AbstarctSet class and implementes Set interface.
+- It extendes AbstractSet class and implements Set interface.
 - For store the elements it using <ul>hashing</ul> mechanism.
 - HashSet does not maintain the insertion order. Here the elements are inserted on the basis of their hashcode.
 - HashSet contains unique elements only.
@@ -672,7 +672,7 @@ where T is the type of the object.
 1] TreeSet :
 - TreeSet extendes AbstractSet class and implements the NavigableSet interface. (The NavigableSet interface implements SortedSet)
 - TreeSet class contains unique elements like HashSet.
-- For TreeSet class access and retrivel times are quite fast.
+- For TreeSet class access and retrieval times are quite fast.
 - TreeSet does not allow the null element.
 - TreeSet is non synchronized.
 - TreeSet class maintain ascending order.
@@ -781,9 +781,9 @@ public class Map_Iteration {
 ```
 
 1] HashMap :-
-- HashMap extends AbstarctMap, AbstractMap implements Map
+- HashMap extends AbstractMap, AbstractMap implements Map
 - It stores the data in key-value pairs. To access a value in a HashMap, we must know it's key.
-- HashMap uses a technique called Hashing. Hashing is a technique of convering a large String to a small String that represents a  same String so that the indexing and search operations are faster.
+- HashMap uses a technique called Hashing. Hashing is a technique of converting a large String to a small String that represents a  same String so that the indexing and search operations are faster.
 - HashSet also uses HashMap internally.
 - HashMap contains only unique keys. If you insert the duplicate key, it will replace the element of the corresponding key.
 - HashMap may have only one null key and multiple null values.
@@ -873,7 +873,7 @@ public class ExampleLinkedHashMap {
 ```
 3] TreeMap :-
 - TreeMap class provides an efficient way of storing key-value pairs in sorted order.
-- TreeMap conatins key-value pair. 
+- TreeMap contains key-value pair. 
 - TreeMap implements NavigableMap extends SortedMap extends Map.
 - TreeMap contains only unique elements.
 - TreeMap can not have a null key but can have multiple null values.
@@ -922,25 +922,25 @@ public class ExampleTreeMap {
 #### Array :
 - Individual variable define >> Arrays >> Collection
  **Advantage of Array :-**
- 1) The main advantage of an array is we can represent multiple values with single varibale. So that reusability of code will be improved.
- 2) If we know exact size of element then we should go for arrays because the performance is best in arrys.
+ 1) The main advantage of an array is we can represent multiple values with single variable. So that reusability of code will be improved.
+ 2) If we know exact size of element then we should go for arrays because the performance is best in arrays.
 
  **Limitations of Array :-**
  1) Arrays are fixed in size. i.e. Once we created an array with some size there is no chance of increasing or decreasing it's size based on our requirement. Hence to use the arrays we should know the size in advance which may not possible always.
  2) Arrays can hold only homogenous data elements except Object.
- 3) Arrays concept is not implemented based on some standard data structure hence readymade method support is not available for every requirement we have to write the code explicitly which is complexity of programming.
+ 3) Arrays concept is not implemented based on some standard data structure hence ready made method support is not available for every requirement we have to write the code explicitly which is complexity of programming.
 
 
 **Advantages of collection over arrays :-**
- 1) Collectionss are growable in nature i.e. Based on our requirement we can increase (or) decrease the size.
+ 1) Collections are growable in nature i.e. Based on our requirement we can increase (or) decrease the size.
  2) Collections can hold both homogenous and heterogenous elements.
- 3) Every collection class is implemented based on some standard data structure. Hence readymade method support is available for every requirement. 
+ 3) Every collection class is implemented based on some standard data structure. Hence ready made method support is available for every requirement. 
 
 **Limitations of collection over arrays :-**
  1) Performance is decreased in collection. 
 
-**Differences between Arryas and Collection**
-| **Arryas**                                                                                                     | **Collection**                                                                                                                |
+**Differences between Arrays and Collection**
+| **Arrays**                                                                                                     | **Collection**                                                                                                                |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 1) The size of an array is fixed.                                                                              | The size of collection is dynamic.                                                                                            |
 | 2) In array we can stores only homogeneous type of data.                                                       | n collection we can stores homogeneous as well as heterogeneous data.                                                         |
