@@ -26,6 +26,7 @@
 
 #### Predicate Functional Interface :
 - It is used for condition checking (TRUE/FALSE)
+- It contains test(T t) method which takes conditional statement and return boolean value.
 
 ```
 package programs.Java8Features_Programs.Predicate;
