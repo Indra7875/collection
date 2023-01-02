@@ -1,5 +1,5 @@
 #### Supplier FI
-- It just supply required objects and other than that it won't take any input
+- It does not take any input, it have only return type.
 - It contains only get() method.
 
 ```
