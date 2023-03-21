@@ -1,0 +1,8 @@
+#### Install Anaconda 
+- https://www.hostinger.com/tutorials/how-to-install-anaconda-on-ubuntu/
+
+#### Uninstall Anaconda 
+- https://stackoverflow.com/questions/58605420/issues-while-installing-anaconda3
+
+### Jupiter Lab
+- https://jupyter.org/install 
