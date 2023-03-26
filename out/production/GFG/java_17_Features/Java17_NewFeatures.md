@@ -21,3 +21,4 @@
 **Before Record class**
 - For creating data transfer/ storing class we need to have only record class_name (arguments)
 - 40 lines of code is replaced by only 1 line. 
+- Record class having no default getter method but we can create it.
