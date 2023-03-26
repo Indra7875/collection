@@ -27,6 +27,14 @@ public class SinglyLinkedList {
         SinglyLinkedList insertNodeAtStart = insertNodeAtBeginning(singlyLinkedList, 5);
         printSinglyLinkedList(insertNodeAtStart);
 
+        // Insert the node at the end of a Singly Linked List
+        SinglyLinkedList insertNodeAtEnd = insertNodeAtEnd(singlyLinkedList, 34);
+        printSinglyLinkedList(insertNodeAtEnd);
+
+        // Insert a node in a Singly Linked List at a given position
+        SinglyLinkedList addedNewNode = addNewNode(singlyLinkedList, 4, 99);
+        printSinglyLinkedList(addedNewNode);
+
     }
 
     // Create Singly Linked List
@@ -79,5 +87,52 @@ public class SinglyLinkedList {
         singlyLinkedList.head = newNode;
 
         return singlyLinkedList;
+    }
+
+    // Insert the node at the end of a Singly Linked List
+    public static SinglyLinkedList insertNodeAtEnd(SinglyLinkedList singlyLinkedList, int value) {
+
+        ListNode newNode = new ListNode(value);
+
+        if (singlyLinkedList.head == null) {
+            singlyLinkedList.head = newNode;
+            return singlyLinkedList;
+        }
+
+        ListNode current = singlyLinkedList.head;
+
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        current.next = newNode;
+
+        return singlyLinkedList;
+    }
+
+    // Insert a node in a Singly Linked List at a given position
+    public static SinglyLinkedList addNewNode(SinglyLinkedList singlyLinkedList, int position, int value) {
+
+        ListNode newNode = new ListNode(value);
+
+        if (position == 1) {
+            newNode.next = singlyLinkedList.head;
+            singlyLinkedList.head = newNode;
+            return singlyLinkedList;
+        } else {
+            int count = 1;
+            ListNode current = singlyLinkedList.head;
+
+            while (count < position - 1) {
+                current = current.next;
+                count++;
+            }
+
+            ListNode temp = current.next;
+            newNode.next = temp;
+            current.next = newNode;
+
+            return singlyLinkedList;
+        }
     }
 }
