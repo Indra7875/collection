@@ -10,4 +10,17 @@ public class Student {
         this.name = name;
         this.subject = subject;
     }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
 }
