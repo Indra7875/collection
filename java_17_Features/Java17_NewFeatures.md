@@ -115,3 +115,184 @@ public class WithRecord {
 }
 
 ```
+
+#### 2. Sealed Classes
+- As we know abstract class we can inherited but final class we can not inherited it.
+- Sealed class gives permit to inherits only specific classes
+- For creating sealed class we use **sealed** keyword before the class name and use **permits** give class using semicolon. 
+```
+sealed class A permits B,C {
+
+}
+```
+- The child classes which extends sealed class A i.e B and C which should be either final/sealed/non-sealed.
+
+```
+package programs.java_17_features_programs;
+
+sealed class A permits B,C {
+    
+}
+
+non-sealed class B extends A {
+    
+}
+
+final class C extends A  {
+    
+}
+
+class D extends B {
+    
+}
+
+public class DemoSealedClass {
+    public static void main(String[] args) {
+        
+    }
+}
+
+```
+- sealed class can extend other class and also implement to the interface.
+
+```
+package programs.java_17_features_programs;
+
+sealed class A extends Thread implements Cloneable permits B,C {
+
+}
+
+non-sealed class B extends A {
+
+}
+
+final class C extends A  {
+
+}
+
+class D extends B {
+
+}
+
+public class DemoSealedClass {
+    public static void main(String[] args) {
+
+    }
+}
+
+```
+
+- It also applicable for interfaces but final is not allowed for interface.
+
+```
+sealed interface X permits Y {
+
+}
+
+non-sealed interface Y extends X {
+
+}
+```
+
+#### 3. Switch Case Enhancement 
+- Earlier In switch there is a case statements and in that we should provide the break keyword otherwise it will execute other case statements.
+- Before JDK 5 switch supports only integer.
+- After JDK 5 switch also supports String.
+
+```
+package programs.java_17_features_programs;
+
+public class OldSwitch {
+    public static void main(String[] args) {
+
+        String day = "Sunday";
+
+        switch (day){
+            case "Saturday", "Sunday" :
+                System.out.println("6 AM");
+                break;
+            case "Monday" :
+                System.out.println("8 AM");
+                break;
+            default:
+                System.out.println("7 AM");
+        }
+    }
+}
+
+``` 
+- In switch enhancement ':' is replaced by '->' so that break is not required end of case.
+
+```
+package programs.java_17_features_programs;
+
+public class NewSwitch {
+    public static void main(String[] args) {
+        String day = "Sunday";
+
+        switch (day){
+            case "Saturday", "Sunday" -> System.out.println("6 AM");
+            case "Monday" -> System.out.println("8 AM");
+            default -> System.out.println("7 AM");
+        }
+    }
+}
+```
+- '->' also able to return the value 
+
+```
+package programs.java_17_features_programs;
+
+public class NewSwitchReturn {
+    public static void main(String[] args) {
+        String month = "April";
+
+       int days = switch (month){
+            case "Jan" -> 31;
+            case "March" -> 31;
+            case "April" -> 30;
+            case "May" -> 31;
+            case "June" -> 30;
+            case "July" -> 31;
+            case "Aug" -> 31;
+            case "Sept" -> 30;
+            case "Oct" -> 31;
+            case "Nov" -> 30;
+            case "Dec" -> 31;
+            default -> 29;
+        };
+
+        System.out.println(days);
+    }
+}
+
+```
+- We can replace '->' by ': yield'  
+
+```
+package programs.java_17_features_programs;
+
+public class NewSwitchYield {
+    public static void main(String[] args) {
+        String month = "Feb";
+
+        int days = switch (month){
+            case "Jan" : yield  31;
+            case "March" : yield 31;
+            case "April" : yield 30;
+            case "May" : yield 31;
+            case "June" : yield 30;
+            case "July" : yield 31;
+            case "Aug" : yield 31;
+            case "Sept" : yield 30;
+            case "Oct" : yield 31;
+            case "Nov" : yield 30;
+            case "Dec" : yield 31;
+            default : yield 29;
+        };
+
+        System.out.println(days);
+    }
+}
+
+```
