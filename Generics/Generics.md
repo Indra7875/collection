@@ -1,6 +1,6 @@
 #### Generics in Java :
 - The java generics programming is introduced in J2SE 5 to deal with type safe objects.
-- It makes the code more stable by detecting the bugs atcompile time.
+- It makes the code more stable by detecting the bugs at compile time.
 - Before the generics, we can store any type of object in collection. Now generics force the java programmer to store a specific type of the objects.
 
 **Advantage of Java Generics :-**

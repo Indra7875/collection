@@ -1,15 +1,15 @@
 #### Java Enums
-- Java Enum is interduced in JDK 1.5
+- Java Enum is introduced in JDK 1.5
 - The Enum in Java is a data type which contains a fixed set of constants.
 - Internally it can be thought of as class which have a fixed set of constants (a variable that dos not change). 
 - The Java Enum constants are static and final implicitly.
-- Constructor of enum type is private. If you don't decalre private constructor then compiler internally creates private constructor.
-- We unble to create instance of Enum because it contains private constructor only.
+- Constructor of enum type is private. If you don't declare private constructor then compiler internally creates private constructor.
+- We unable to create instance of Enum because it contains private constructor only.
 - Enum improves type safety.
 - Enum can be easily used in switch.
 - Enum can be traversed.
 - Enum can have fields, constructors and methods.
-- Enum may implement many interface but can not extends any class beacuse it internally extends Enum class.
+- Enum may implement many interface but can not extends any class because it internally extends Enum class.
 
 **Important Methods in Enum**
 - Java compiler internally adds the values(), valueOf() and ordinal methods within the enum at compile time. It internally creates a static and final class for enum.
