@@ -4,20 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7edf692-fb46-4a31-a428-22723920d004" name="Changes" comment="">
+    <list default="true" id="e3497452-f403-4b21-ad81-7a90bb5f7727" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/java_17_Features/Java17_NewFeatures.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/DemoSealedClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/NewSwitch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/NewSwitchReturn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/NewSwitchYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GFG/programs/java_17_features_programs/OldSwitch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ArrayDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ArrayDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ArrayEvenRemove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/Day1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/FindMinValueArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/FindSecondMaxValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/MissingNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/MissingNumUsingFormula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/MissingNumUsingSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/MoveZeroAtEnd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ResizeAnArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ReverseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/ReverseArrayImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/SinglyLinkedList$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/SinglyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/SinglyLinkedListImpl$ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/SinglyLinkedListImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/StringPalindrome1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/StringPalindrome2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/DS_AND_ALGO/TimeComplexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Guesser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/LaunchGuesserGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Pattern1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Pattern2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Pattern3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Pattern4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/Umpire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/AgeComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/DemoForStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/I.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/NameComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/SingletonExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PW_Skills/interview_ques/Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,80 +71,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NYmxKquWugXIkq8rdwKX1Ef8D7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2Nud7qaebnGHjrzTuutQl95U4Lu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager" selected="Application.NewSwitchYield">
-    <configuration name="DemoSealedClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.java_17_features_programs.DemoSealedClass" />
-      <module name="GFG" />
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ReverseTheNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview_ques.ReverseTheNum" />
+      <module name="PW_Skills" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.java_17_features_programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewSwitch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.java_17_features_programs.NewSwitch" />
-      <module name="GFG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programs.java_17_features_programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewSwitchReturn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.java_17_features_programs.NewSwitchReturn" />
-      <module name="GFG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programs.java_17_features_programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewSwitchYield" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.java_17_features_programs.NewSwitchYield" />
-      <module name="GFG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programs.java_17_features_programs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OldSwitch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.java_17_features_programs.OldSwitch" />
-      <module name="GFG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programs.java_17_features_programs.*" />
+          <option name="PATTERN" value="interview_ques.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,22 +103,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NewSwitchYield" />
-        <item itemvalue="Application.NewSwitchReturn" />
-        <item itemvalue="Application.NewSwitch" />
-        <item itemvalue="Application.OldSwitch" />
-        <item itemvalue="Application.DemoSealedClass" />
+        <item itemvalue="Application.ReverseTheNum" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a7edf692-fb46-4a31-a428-22723920d004" name="Changes" comment="" />
-      <created>1679849645639</created>
+      <changelist id="e3497452-f403-4b21-ad81-7a90bb5f7727" name="Changes" comment="" />
+      <created>1680517745955</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679849645639</updated>
+      <updated>1680517745955</updated>
     </task>
     <servers />
   </component>
