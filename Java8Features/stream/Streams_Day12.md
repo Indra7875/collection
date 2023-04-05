@@ -323,3 +323,37 @@ public class Day12_10StreamOf {
 
 ```
 
+#### stream.map() Vs stream.flatMap() :
+
+| **stream.map()**                                                 | **stream.flatMap()**                                                                         |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 1. There is one-to-one mapping between input and output element. | 1. There is one-to-many mapping between input and output element.                            |
+| 2. For single input value we will get single output value.       | 2. For multiple input values we flatten the values so that we will get single output stream. |
+| 3. For single input list we will get output as in single list.   | 3. For multiple input list we will get output as in single list.                             |
+
+
+```
+package programs.Java8Features_Programs.StreamAPI_Programs;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Day13_1FlatMap {
+    public static void main(String[] args) {
+        List<Integer> listInt1 = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> listInt2 = Arrays.asList(6, 7, 8, 9, 10);
+
+        List<List<Integer>> listOfListInt = Arrays.asList(listInt1, listInt2);
+
+        System.out.println(listOfListInt);
+
+        List<Integer> resultList = listOfListInt.stream().flatMap(l -> l.stream()).collect(Collectors.toList());
+
+        System.out.println(resultList);
+
+        listOfListInt.stream().flatMap(l -> l.stream()).filter(i -> i % 2 == 0).forEach(System.out::print);
+    }
+}
+
+```
