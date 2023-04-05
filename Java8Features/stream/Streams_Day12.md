@@ -4,6 +4,26 @@
 - Stream s = c.stream();
 - It is present in java.util.stream package
 
+- **stream()** : to given stream object
+- **filter(Predicate)** : to filter elements based on given condition
+- **map(Function)** : to modify elements
+- **collect()** : to collect the result
+- **count()** :  to count number of elements
+- **sorted()** :
+  - to sort the elements ( by default ascending order )(internally i1.compareTo(i2))
+  - for the customized sorting (descending order) must provide comparator argument
+  - Comparator ---> compare(obj1, obj2) ---> i2.compareTo(i1)
+  - returns +ve (1) if obj1 < obj2
+  - returns -ve (-1) if obj1 > obj2
+  - returns 0 if obj1 == obj2
+    - (i1, i2) -> (i1 < i2) ? 1 : (i1 > i2) ? -1 : 0
+
+- **min() / max()** : It gives min / max value based on sorting.
+- **forEach(Function)** : It is act like for each loop, which takes the function.
+- **toArray()** : To convert stream of objects into array.
+- **Arrays.stream(array_obj)** : We can use stream concept to array also using Arrays.stream() method.
+- **Stream.of()** : we can use stream concept to group of object also using Stream.of() method.
+
 ```
 package programs.Java8Features_Programs.StreamAPI_Programs;
 
@@ -303,22 +323,3 @@ public class Day12_10StreamOf {
 
 ```
 
-- **stream()** : to given stream object
-- **filter(Predicate)** : to filter elements based on given condition
-- **map(Function)** : to modify elements 
-- **collect()** : to collect the result
-- **count()** :  to count number of elements 
-- **sorted()** : 
-      - to sort the elements ( by default ascending order )(internally i1.compareTo(i2))
-      - for the customized sorting (descending order) must provide comparator argument 
-      - Comparator ---> compare(obj1, obj2) ---> i2.compareTo(i1)
-           - returns +ve (1) if obj1 < obj2
-           - returns -ve (-1) if obj1 > obj2
-           - returns 0 if obj1 == obj2
-     - (i1, i2) -> (i1 < i2) ? 1 : (i1 > i2) ? -1 : 0   
-  
-- **min() / max()** : It gives min / max value based on sorting.
-- **forEach(Function)** : It is act like for each loop, which takes the function.
-- **toArray()** : To convert stream of objects into array.
-- **Arrays.stream(array_obj)** : We can use stream concept to array also using Arrays.stream() method.
-- **Stream.of()** : we can use stream concept to group of object also using Stream.of() method.
