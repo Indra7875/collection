@@ -4,6 +4,26 @@
 - Stream s = c.stream();
 - It is present in java.util.stream package
 
+- **stream()** : to given stream object
+- **filter(Predicate)** : to filter elements based on given condition
+- **map(Function)** : to modify elements
+- **collect()** : to collect the result
+- **count()** :  to count number of elements
+- **sorted()** :
+  - to sort the elements ( by default ascending order )(internally i1.compareTo(i2))
+  - for the customized sorting (descending order) must provide comparator argument
+  - Comparator ---> compare(obj1, obj2) ---> i2.compareTo(i1)
+  - returns +ve (1) if obj1 < obj2
+  - returns -ve (-1) if obj1 > obj2
+  - returns 0 if obj1 == obj2
+    - (i1, i2) -> (i1 < i2) ? 1 : (i1 > i2) ? -1 : 0
+
+- **min() / max()** : It gives min / max value based on sorting.
+- **forEach(Function)** : It is act like for each loop, which takes the function.
+- **toArray()** : To convert stream of objects into array.
+- **Arrays.stream(array_obj)** : We can use stream concept to array also using Arrays.stream() method.
+- **Stream.of()** : we can use stream concept to group of object also using Stream.of() method.
+
 ```
 package programs.Java8Features_Programs.StreamAPI_Programs;
 
@@ -303,22 +323,37 @@ public class Day12_10StreamOf {
 
 ```
 
-- **stream()** : to given stream object
-- **filter(Predicate)** : to filter elements based on given condition
-- **map(Function)** : to modify elements 
-- **collect()** : to collect the result
-- **count()** :  to count number of elements 
-- **sorted()** : 
-      - to sort the elements ( by default ascending order )(internally i1.compareTo(i2))
-      - for the customized sorting (descending order) must provide comparator argument 
-      - Comparator ---> compare(obj1, obj2) ---> i2.compareTo(i1)
-           - returns +ve (1) if obj1 < obj2
-           - returns -ve (-1) if obj1 > obj2
-           - returns 0 if obj1 == obj2
-     - (i1, i2) -> (i1 < i2) ? 1 : (i1 > i2) ? -1 : 0   
-  
-- **min() / max()** : It gives min / max value based on sorting.
-- **forEach(Function)** : It is act like for each loop, which takes the function.
-- **toArray()** : To convert stream of objects into array.
-- **Arrays.stream(array_obj)** : We can use stream concept to array also using Arrays.stream() method.
-- **Stream.of()** : we can use stream concept to group of object also using Stream.of() method.
+#### stream.map() Vs stream.flatMap() :
+
+| **stream.map()**                                                 | **stream.flatMap()**                                                                         |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 1. There is one-to-one mapping between input and output element. | 1. There is one-to-many mapping between input and output element.                            |
+| 2. For single input value we will get single output value.       | 2. For multiple input values we flatten the values so that we will get single output stream. |
+| 3. For single input list we will get output as in single list.   | 3. For multiple input list we will get output as in single list.                             |
+
+
+```
+package programs.Java8Features_Programs.StreamAPI_Programs;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Day13_1FlatMap {
+    public static void main(String[] args) {
+        List<Integer> listInt1 = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> listInt2 = Arrays.asList(6, 7, 8, 9, 10);
+
+        List<List<Integer>> listOfListInt = Arrays.asList(listInt1, listInt2);
+
+        System.out.println(listOfListInt);
+
+        List<Integer> resultList = listOfListInt.stream().flatMap(l -> l.stream()).collect(Collectors.toList());
+
+        System.out.println(resultList);
+
+        listOfListInt.stream().flatMap(l -> l.stream()).filter(i -> i % 2 == 0).forEach(System.out::print);
+    }
+}
+
+```

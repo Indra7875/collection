@@ -35,6 +35,15 @@ public class SinglyLinkedList {
         SinglyLinkedList addedNewNode = addNewNode(singlyLinkedList, 4, 99);
         printSinglyLinkedList(addedNewNode);
 
+        // Delete first node from singly linked list
+        printSinglyLinkedList(singlyLinkedList);
+        SinglyLinkedList deleteFirstNodeSLL = deleteFirstNode(singlyLinkedList);
+        printSinglyLinkedList(deleteFirstNodeSLL);
+
+        // Delete last node of a singly linked list
+        printSinglyLinkedList(singlyLinkedList);
+        SinglyLinkedList deleteLastNodeSLL = deleteLastNode(singlyLinkedList);
+        printSinglyLinkedList(deleteLastNodeSLL);
     }
 
     // Create Singly Linked List
@@ -134,5 +143,39 @@ public class SinglyLinkedList {
 
             return singlyLinkedList;
         }
+    }
+
+    // Delete first node from singly linked list
+    public static SinglyLinkedList deleteFirstNode(SinglyLinkedList singlyLinkedList) {
+        if (singlyLinkedList.head == null) {
+            return singlyLinkedList;
+        }
+
+        ListNode temp = singlyLinkedList.head;
+        singlyLinkedList.head = singlyLinkedList.head.next;
+        temp.next = null;
+        return singlyLinkedList;
+    }
+
+    // Delete last node of a singly linked list
+    public static SinglyLinkedList deleteLastNode(SinglyLinkedList singlyLinkedList) {
+        if (singlyLinkedList.head == null) {
+            return singlyLinkedList;
+        } else if (singlyLinkedList.head.next == null) {
+            singlyLinkedList.head = null;
+            return singlyLinkedList;
+        }
+
+        ListNode current = singlyLinkedList.head;
+        ListNode previous = null;
+
+        while (current.next != null) {
+            previous = current;
+            current = current.next;
+        }
+
+        previous.next = null;
+
+        return singlyLinkedList;
     }
 }

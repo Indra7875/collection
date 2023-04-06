@@ -66,7 +66,7 @@
 - Collection interface contains basic universal methods like add(), remove()
 - This interface acts like foundation on which collection classes implemented.
 
-**3. List Interface :**
+#### 1. List Interface :
 - This is a child interface of the collection interface.
 - This interface insertion order of data is maintained.
 - This also allows duplicate data to be present in it.
@@ -273,7 +273,7 @@ public class ExampleStack {
 
 ```
 
-**4. Queue Interface :** 
+#### 2. Queue Interface :
 - As the name suggest, a queue interface maintains the FIFO (First In First Out) order similar to a real-world queue line.
 - This interface is dedicated to storing all the elements where the order of the elements matter. 
 - For example, whenever we try to book a ticket, the tickets are sold on first come first serve basis. Therefore, the person whose request arrives first into the queue gets the ticket.
@@ -502,7 +502,7 @@ public class ExampleComparator {
 
 <br>
 
-**5. Deque Interface :**
+**2] Deque Interface :**
 - Deque interface is present in java.util package.
 - It is the extends the interface Queue.
 - The Deque supports the addition as well as the removal of elements from both ends of the data structure.
@@ -510,7 +510,7 @@ public class ExampleComparator {
 - We know that the stack supports the Last in First Out / First in Last Out (LIFO/FILO) and queue supports First in First Out (FIFO)
 - So Deque supports both. It is double ended queue.
 
-1] ArrayDeque :
+i) ArrayDeque :
 - ArrayDeque is the class which implements Deque interface.
 - Unlike Queue, we can add or remove elements from both sides.
 - Null elements are not allowed in the ArrayDeque.
@@ -554,7 +554,7 @@ public class ExampleArrayDeque {
 
 ```
 
-**6. Set Interface :**
+#### 3. Set Interface :
 - This is a child interface of the collection interface.
 - This interface insertion order of data is not maintained.
 - This does not allows duplicate data to be present in it.
@@ -658,7 +658,7 @@ public class ExampleLinkedHashSet {
 
 ```
 
-**7. Sorted Set Interface :**
+**Sorted Set Interface:**
 - This interface is very similar to Set interface. The only difference is that this interface has extra methods that maintain the ordering of the elements.
 - The Sorted set interface extends the set interface and is used to handle the data which need to be sorted.
 - The class which implements this interface is TreeSet.
@@ -731,7 +731,7 @@ public class ExampleTreeSetInteger {
 
 ```
 
-**8. Map Interface :**
+### II. Map Interface :
 - Map interface does not extend the Collection interface like List,Queue,Set interface.
 - Map contains key-value pair. Each key and value pair is known as an entry.
 - A Map contains unique keys. It does not allow duplicate keys, but you can have duplicate values.

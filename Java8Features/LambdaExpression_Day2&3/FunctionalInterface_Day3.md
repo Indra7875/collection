@@ -5,8 +5,8 @@
 - ActionListener ==> actionPerformed()
 - Callable ==> call()
 - Functional interface contains only single abstract method.
-- If you want to invoke/call the lambda expression then it's compalsury functional interface is required.
-- Functional Interface contains execat one abstract method but any number of default and static methods.
+- If you want to invoke/call the lambda expression then it's compulsory functional interface is required.
+- Functional Interface contains exact one abstract method but any number of default and static methods.
 - @FunctionalInterface Annotation is there to specify Functional Interface.
 
 **Example 1 for valid Functional Interface**
@@ -142,5 +142,5 @@ class Test
 }
 ```
 **Note :**
-- Lambda expression is always assosiate with functional interface. If in the program functional interface is present then that time only we can use lambda expression.
-- Witeout functional functional interface we can not use lambda expression.
+- Lambda expression is always associate with functional interface. If in the program functional interface is present then that time only we can use lambda expression.
+- Without functional functional interface we can not use lambda expression.
