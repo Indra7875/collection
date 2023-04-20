@@ -10,7 +10,7 @@
 - ii) The private final variables 
 - iii) For initializing final variables required argument constructor 
 - iv) For print the object values required to override toString() method.
-- v) To compare the object values required to override compare() & hasCode() method.
+- v) To compare the object values required to override compare() & hashCode() method.
 
 ```
 package programs.java_17_features_programs;
@@ -80,7 +80,7 @@ public class WithoutRecord {
 
 - For creating two variable it will take at least 40 lines of code
 
-**Before Record class**
+**After Record class**
 - For creating data transfer/ storing class we need to have only record class_name (arguments)
 - 40 lines of code is replaced by only 1 line. 
 - Record class having variable_name() methods for get the data.
