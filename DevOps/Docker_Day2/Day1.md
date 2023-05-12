@@ -116,6 +116,73 @@
 11) $ docker rm <container_name>
 - To delete the container 
 
+**Note :**
+- If docker is not installed then we need to install by using following command 
+- $ sudo yum install docker -y 
+
+
+#### Docker Hands On :
+1) $ sudo su
+- To become root user
+
+2) $ yum update -y
+- To update the existing packages
+
+3) $ which docker 
+- To see docker installed file 
+
+4) $ docker -v / $ docker --version
+- To check docker version 
+
+5) $ service docker status 
+- To check docker service status 
+
+6) $ docker info
+- To check docker info (docker is running or not)
+
+7) $ service docker start
+- To start the docker
+
+8) $ docker images
+- To see all the images present in your local machine.
+
+9) $ docker ps
+- To see only running containers
+
+10) $ docker ps -a
+- To see all running as well as stops containers 
+- (ps: process status, -a: all)
+
+11) $ docker run -it ubuntu /bin/bash
+- Pull the image from docker hub and run it 
+
+12) $ cat /etc/os-release
+- To check info of O.S. 
+
+13) $ exit 
+- To come out from container.
+
+14) $ docker pull jenkins/jenkins:lts-jdk11
+- To pull the image from docker hub and kept it in local.
+
+15) $ docker search ubuntu
+- To search the docker image from the local
+
+16) $ docker run -it --name <container_name> <image_name> /bin/bash
+- To pull the container, give custom name to container and run it
+
+17) $ docker start <container_name>
+- To start the container 
+
+18) $ docker attach <container_name>
+- To go inside given container 
+
+19) $ docker stop <container_name>
+- To stop the container 
+
+20) $ docker rm <container_name>
+- To delete the given container
+
 
 
 
