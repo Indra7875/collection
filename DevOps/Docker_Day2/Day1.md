@@ -183,6 +183,174 @@
 20) $ docker rm <container_name>
 - To delete the given container
 
+#### Steps To Create Custom Docker Image 
+1) Login to your AWS account and start your EC2 instance.
+
+2) Pull the image from DockerHub and run as container by giving name
+- $ docker run -it --name <container_name> <image_name> /bin/bash
+
+3) Go to /temp directory
+- $ cd /temp
+
+4) Now create one file inside this temp directory 
+- $ touch myfile
+
+5) Now if you want to see the difference between the base image and changes in it then
+- $ docker diff <container_name> 
+
+```
+Output :
+   C  /root
+   A  /root/.bash_history
+   C  /temp
+   A  /temp/myfile
+   D
+
+   whereas, C = change, A = append or addition, D = delete 
+```
+
+6) Now create image from this container 
+- $ docker commit <container_name> <image_name>
+
+7) Check the images 
+- $ docker images 
+
+8) Now create container from this image
+- $ docker run -it --name <container_name> <image_name> /bin/bash
+
+
+#### Hands On Lab :
+1) $ sudo su
+2) # service docker status
+3) # service docker start 
+4) # docker run --name ubuntu-container1 -it ubuntu /bin/bash
+5) # ls
+6) # cd /tmp
+7) # touch file1
+8) # exit 
+9) # docker diff ubuntu-container1 
+10) # docker commit ubuntu-container1 updated_image_ubuntu
+11) # docker images
+12) # docker run --name updated_ubuntu_container -it updated_image_ubuntu /bin/bash
+13) # ls
+14) # cd /tmp
+15) # ls
+16) # exit
+   
+#### Docker File and It's Components 
+**Dockerfile**
+- Dockerfile is basically text file which contains some set of instructions.
+- It used in automation of docker image creation.
+
+**FROM**
+- For base image
+- This command must be top of the Dockerfile.
+
+**RUN**
+- To execute commands, it will create layer image.
+
+**MAINTAINER**
+- Author/Owner/Description
+
+**COPY**
+- Copy files from local system (docker VM) We need to provide source, destination (We can not download files from internet and any remote repo)
+
+**ADD**
+- Similar to COPY but it provides the feature to download files from internet, also this file will extracted docker image side.
+
+**EXPOSE**
+- To expose the ports such as port 8080 for tomcat, port 80 for nginx.
+
+**WORKDIR**
+- To set working directory for container.
+
+**CMD**
+- Execute commands but during container creation.
+
+**ENTRYPOINT**
+- It is similar to CMD but having higher priority than CMD.
+- First command executed by ENTRYPOINT only.
+
+**ENV**
+- Environment variables
+
+**ARG**
+- ARG <variable_name>[=<default_value>]
+- Here are some use cases Setting build-time variables, Conditional builds, Passing values during build.
+
+#### Steps to create container from image of Dockerfile
+1) Create fille name as Dockerfile
+- $ vi Dockerfile
+  
+2) Add instructions in Dockerfile
+```
+FROM ubuntu
+RUN echo "Hello World" > /tmp/file2
+```
+
+3) Build Dockerfile to create an image
+- $ docker build -t <image_name> .
+- '-t' for tag
+- '.' for current working directory 
+<br>
+- $ docker ps -a
+- $ docker images 
+  
+4) Run image to create container
+- $ docker run --name <container_name> -it <image_name> /bin/bash
+- $ cat /tmp/file2
+
+#### Hands On Lab :
+1) $ sudo su
+2) $ pwd
+3) $ vi Dockerfile
+4) press i
+5) Write  
+```
+FROM ubuntu
+RUN echo "Hello World" > /tmp/file2
+```
+6) press Esc and :wq
+7) $ ls
+8) $ docker build -t ubuntu_dockerfile-image .
+9) $ docker images
+10) $ docker run --name ubuntu_dockerfile-image-container -it ubuntu_dockerfile-image /bin/bash
+11) # cd /tmp
+12) # ls
+13) # cat file2
+14) # exit
+
+#### Hands On Lab :
+1) # vi Dockerfile
+2) press i
+3) write the below script
+   ```
+   FROM ubuntu
+   WORKDIR /tmp
+   RUN echo "Hi, my name is Indrajit" > /tmp/testfile3
+   ENV myname indrajitranananavare
+   COPY testfile1 /tmp
+   ADD test.tar.gz /tmp
+   ```
+4) press Esc and :wq
+5) # touch testfile1
+6) # ls
+7) # touch test
+8) # ls
+9) # tar -cvf test.tar test
+10) # ls
+11) # gzip test.tar
+12) # ls
+13) # rm -rf test
+14) # ls
+15) # docker build new-dfi-ubuntu .
+
+
+
+
+
+
+
 
 
 
