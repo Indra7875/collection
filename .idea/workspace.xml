@@ -6,7 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e3497452-f403-4b21-ad81-7a90bb5f7727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/Java8Features_Programs/JavaTechie/FI/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/programs/Java8Features_Programs/JavaTechie/FI/ConsumerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/BiFunctional_Interface_Day9/BiFunctional_Interface_Day9.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Consumer_FI_Day7/Consumer_FI_Day7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Default_Static_Methods_Day4/Default_Static_Methods_Day4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Function_FI_Day6/Function_FI_Day6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Introduction_Day1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/LambdaExpression_Day2&amp;3/FunctionalInterface_Day3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/LambdaExpression_Day2&amp;3/LambdaExpression_Day2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Method_Constructor_Ref_Day11/Method_Constructor_Ref.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Predicate_FI_Day5/Predicate_FI_Day5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Primitive_Functional_Interface_Day10/Primitive_Functional_Interface_Day10.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Supplier_FI_Day8/Supplier_FI_Day8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/stream/Master_Stream_API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/stream/Streams_Day12.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
