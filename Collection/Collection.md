@@ -582,7 +582,7 @@ where T is the type of the object
 <br>
 
 1] HashSet :
-- The HashSet class is provides hash table data structure.
+- The HashSet internally uses HashMap to store the elements.
 - It extendes AbstractSet class and implements Set interface.
 - For store the elements it using <ul>hashing</ul> mechanism.
 - HashSet does not maintain the insertion order. Here the elements are inserted on the basis of their hashcode.

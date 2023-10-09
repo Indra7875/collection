@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3497452-f403-4b21-ad81-7a90bb5f7727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/Java8Features_Programs/JavaTechie/FI/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/programs/Java8Features_Programs/JavaTechie/FI/ConsumerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8Features/Day13_Optional/Optional/Optional.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +48,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="programs.Java8Features_Programs.JavaTechie.Optional" />
       <recent name="programs.Java8Features_Programs.JavaTechie.sort.obj_sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapVsFlatMap">
-    <configuration name="MapVsFlatMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.map_flatmap.MapVsFlatMap" />
+  <component name="RunManager" selected="Application.MapReduceExample2">
+    <configuration name="MapReduceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.map_reduce.MapReduceExample" />
       <module name="GFG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.map_flatmap.*" />
+          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.map_reduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.sort.SortListDemo" />
+    <configuration name="MapReduceExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.map_reduce.MapReduceExample1" />
       <module name="GFG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.sort.*" />
+          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.map_reduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.SortListMain" />
+    <configuration name="MapReduceExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.map_reduce.MapReduceExample2" />
       <module name="GFG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.*" />
+          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.map_reduce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortMapMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.SortMapMain" />
+    <configuration name="OptionalDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.Optional.OptionalDemo1" />
       <module name="GFG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.*" />
+          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.Optional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortMapMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.SortMapMain2" />
+    <configuration name="OptionalDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programs.Java8Features_Programs.JavaTechie.Optional.OptionalDemo2" />
       <module name="GFG" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.sort.obj_sort.*" />
+          <option name="PATTERN" value="programs.Java8Features_Programs.JavaTechie.Optional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapVsFlatMap" />
-        <item itemvalue="Application.SortMapMain2" />
-        <item itemvalue="Application.SortMapMain" />
-        <item itemvalue="Application.SortListMain" />
-        <item itemvalue="Application.SortListDemo" />
+        <item itemvalue="Application.MapReduceExample2" />
+        <item itemvalue="Application.MapReduceExample1" />
+        <item itemvalue="Application.MapReduceExample" />
+        <item itemvalue="Application.OptionalDemo2" />
+        <item itemvalue="Application.OptionalDemo1" />
       </list>
     </recent_temporary>
   </component>
