@@ -584,10 +584,10 @@ where T is the type of the object
 1] HashSet :
 - The HashSet internally uses HashMap to store the elements.
 - It extendes AbstractSet class and implements Set interface.
-- For store the elements it using <ul>hashing</ul> mechanism.
+- For store the elements it using hashing mechanism.
 - HashSet does not maintain the insertion order. Here the elements are inserted on the basis of their hashcode.
 - HashSet contains unique elements only.
-- HashSet allows null value.
+- HashSet allows only one null value.
 - HashSet is non synchronized.
 - HashSet is the best approach for search operations.
 - The initial default capacity of HashSet is 16, and load factor is 0.75
